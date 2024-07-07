@@ -1,10 +1,12 @@
 const express = require("express");
 const app = express();
+const cors = require('cors')
 
 const db = require("./models");
 
 //pars data to json
 app.use(express.json());
+app.use(cors());
 
 //Routers
 const postRouter = require('./routes/Posts');
