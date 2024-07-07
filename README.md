@@ -5,3 +5,4 @@ cmd used:
 -install -g sequelize-cli 
 -npx sequelize init
 -npm install axios
+-npm install cors
