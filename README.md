@@ -4,3 +4,4 @@ cmd used:
 -install sequelize sequelize-cli
 -install -g sequelize-cli 
 -npx sequelize init
+-npm install axios
