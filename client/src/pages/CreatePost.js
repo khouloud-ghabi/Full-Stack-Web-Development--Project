@@ -16,7 +16,7 @@ function CreatePost() {
            const validationSchema = Yup.object().shape({
             title: Yup.string().required(),
             PostText:Yup.string().required(),
-            userName:Yup.string().min(10).max(15).required(),
+            userName:Yup.string().min(3).max(15).required(),
            });
 
 
@@ -30,7 +30,7 @@ function CreatePost() {
                 autocomplete="off"
                 id="inputCreatePost" 
                 name="title" 
-                placeholder="(Ex. khouloud....)"/>
+                placeholder="(Ex. title....)"/>
 
                 <label>Post: </label>
                 <ErrorMessage name="postText" component="span" />
