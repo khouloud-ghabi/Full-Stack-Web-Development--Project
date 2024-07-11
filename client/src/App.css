@@ -184,6 +184,7 @@ a {
   height: calc(100vh - 70px);
   display: grid;
   place-items: center;
+  border: 2px solid dodgerblue;
 }
 
 .rightSide {
@@ -193,6 +194,7 @@ a {
   place-items: center;
   display: flex;
   flex-direction: column;
+  border: 2px solid dodgerblue;
 }
 
 .rightSide .addCommentContainer {
