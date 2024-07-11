@@ -19,7 +19,17 @@ function Post() {
         <div className='body'>{postObject.postText}</div>
         <div className='footer'>{postObject.userName}</div>
       </div>
-      <div className='rightSide'>Comment Section</div>
+      <div className='rightSide'>
+        <div className='addCommentContainer'>
+        <input
+            type="text"
+            placeholder="Comment..."
+            autoComplete="off"
+            />
+          <button > Add Comment</button>
+        </div>
+        <div className='listOfComments'></div>
+      </div>
     </div>
   );
 }
