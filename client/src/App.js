@@ -9,8 +9,10 @@ function App() {
     <div className="App">
       <Router>
         <div className='navbar'>
-        <Link to ="createpost">Create A Post</Link>
         <Link to ="/">Home Page</Link>
+        <Link to ="/createpost">Create A Post</Link>
+        <Link to ="/login">Login</Link>
+        <Link to ="/registration">Registration</Link>
         </div>
         <Routes>
           <Route path="/" element={<Home />} />
