@@ -10,7 +10,7 @@ function Registration() {
       };  
       const validationSchema = Yup.object().shape({
         userName: Yup.string().min(3).max(15).required(),
-        passsword: Yup.string().min(4).max(20).required(),
+        password: Yup.string().min(4).max(20).required(),
       });
     
     
@@ -30,15 +30,15 @@ function Registration() {
       <label>Username: </label>
       <ErrorMessage name="userName" component="span" />
       <Field
-        autocomplete="off"
+        autoComplete="off"
         id="inputCreatePost"
         name="userName"
         placeholder="(your name.....)"
       />
-      <label>Passsword: </label>
+      <label>Password: </label>
       <ErrorMessage name="password" component="span" />
       <Field
-        autocomplete="off"
+        autoComplete="off"
         id="inputCreatePost"
         name="password"
         placeholder="(your password.....)"
