@@ -41,6 +41,7 @@ function Registration() {
         autoComplete="off"
         id="inputCreatePost"
         name="password"
+        type="password"
         placeholder="(your password.....)"
       />
 
