@@ -10,11 +10,11 @@ function Login() {
     const data = { userName: userName, password: password };
     axios.post("http://localhost:3001/auth/login", data)
       .then((response) => {
-        if (response.data.error) {
-          alert(response.data.error);
-        } else {
-          sessionStorage.setItem("accessToken", response.data.accessToken);
-        }
+       if(response.data.error){
+        alert(response.data.error);
+       } else{
+        sessionStorage.setItem("accessToken",response.data);
+       }
       })
       .catch((err) => {
         if (err.response) {
