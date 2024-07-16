@@ -15,23 +15,7 @@ function Login() {
        } else{
         sessionStorage.setItem("accessToken",response.data);
        }
-      })
-      .catch((err) => {
-        if (err.response) {
-          // The request was made and the server responded with a status code
-          // that falls out of the range of 2xx
-          console.log('Response Error:', err.response.data);
-          setError(err.response.data.message);
-        } else if (err.request) {
-          // The request was made but no response was received
-          console.log('Request Error:', err.request);
-          setError("No response from server.");
-        } else {
-          // Something happened in setting up the request that triggered an Error
-          console.log('General Error:', err.message);
-          setError("An error occurred.");
-        }
-      });
+      });  
   };
 
   return (
